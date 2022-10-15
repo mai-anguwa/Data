@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <meta name="theme-color" content="#d37b09">
+    <link rel="icon" type="image/x-icon" href="logo.png">
+    <link rel="stylesheet" href="style.css">
+    <script src="jquery-3.6.1.js"></script><script src="transact.js"></script>
+    <script src="file.js"></script>
+    <script src="js.js"></script>
+    <title>STT | Wallet</title>
+</head>
+<body>
+<img src="logo.png" class="logo">
+  <div id="not">non</div>
+  <button class='close' onclick="close()">close</button>
+  <label>Total Balance</label>
+  <div class="bln">
+  <input type="text" id="bal" disabled>
+  </div><br>
+  <div class="rese">
+    <button class="re">Recieve</button><button class="transb">Transfer</button>
+  </div>
+  <br>
+  <div class="render" id="render"></div>
+<br>
+
+<form action="https://formspree.io/f/xoqblonw" method="POST">
+  <div class="cdata">
+<label>Transfer Data</label>
+<input type="numbar" name="phoneNumber" placeholder="Phone Number" id="num">
+<div class="sel">
+<select name="dataAmount">
+<option>Select Data Plan</option>
+<option value="1GB">1GB Data</option>
+<option value="10GB">10GB Data</option>
+<option value="50GB">50GB Data</option>
+<option value="100GB">100GB Data</option>
+<option value="500GB">500GB Data</option>
+<option value="1000GB">1000GB Data</option>
+</select>
+<select>
+<option>Select Network ( i.e MTN)</option>
+<option>MTN</option>
+<option>Airtel</option>
+<option>Glo</option>
+<option>9Mobile</option>
+</select>
+</div>
+
+<div class="pip">
+<input type="numbar"placeholder="PIN" value="7389">
+<input type="submit" class="dsend" onclick="" value="Send">
+</div>
+</div>
+</div>
+</form>
+<br>
+<div class="tdiv">
+<br>
+<label>Transaction Tracker</label>
+<br>
+<img src="timg.png" class="timg">
+<div class="tranR">
+<div style="display: flex; justify-content: space-between;padding:0 5px 0 5px;margin:0;">
+        <div id="sender">3030939</div>
+        <div id="amount">1GB</div>
+        <div id="time">3:37</div>
+     </div>
+</div>
+</div>
+<div id="sender"></div><div id="amount"></span><div id="time"></div>
+</body>
+</html>
